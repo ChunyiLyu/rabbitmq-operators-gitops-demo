@@ -5,5 +5,5 @@ metadata:
   name: federation-uri
   namespace: rabbitmq-system
 type: Opaque
-data:
+stringData:
   uri: amqp://demo:demo@rabbit2.rabbitmq-system.svc.cluster.local/upstream
