@@ -1,0 +1,1 @@
+# rabbitmq-operators-gitops-demo
