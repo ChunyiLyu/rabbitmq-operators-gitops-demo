@@ -1,0 +1,14 @@
+---
+apiVersion: rabbitmq.com/v1beta1
+kind: Queue
+metadata:
+  name: qq
+  namespace: rabbitmq-system
+spec:
+  name: qq
+  vhost: "vhost3"
+  type: quorum
+  autoDelete: false
+  durable: true
+  rabbitmqClusterReference:
+    name: rabbit1
