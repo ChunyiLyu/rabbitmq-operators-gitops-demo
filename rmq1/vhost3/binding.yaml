@@ -1,0 +1,13 @@
+---
+apiVersion: rabbitmq.com/v1beta1
+kind: Binding
+metadata:
+  name: binding3
+  namespace: rabbitmq-system
+spec:
+  vhost: "vhost3"
+  source: fanout3
+  destination: qq3
+  destinationType: queue
+  rabbitmqClusterReference:
+    name: rabbit1
