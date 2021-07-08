@@ -1,0 +1,14 @@
+---
+apiVersion: rabbitmq.com/v1beta1
+kind: Federation
+metadata:
+  name: federation-example
+  namespace: rabbitmq-system
+spec:
+  name: "origin"
+  vhost: "downstream"
+  uriSecret:
+    name: federation-uri
+  ackMode: "on-confirm"
+  rabbitmqClusterReference:
+    name: rabbit2
