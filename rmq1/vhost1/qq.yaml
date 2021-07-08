@@ -2,10 +2,10 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Queue
 metadata:
-  name: qq
+  name: qq1
   namespace: rabbitmq-system
 spec:
-  name: qq
+  name: qq1
   vhost: "vhost1"
   type: quorum
   autoDelete: false

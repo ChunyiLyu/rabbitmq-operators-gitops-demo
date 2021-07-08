@@ -2,10 +2,10 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Exchange
 metadata:
-  name: fanout
+  name: fanout1
   namespace: rabbitmq-system
 spec:
-  name: fanout-exchange
+  name: fanout1
   vhost: "vhost1"
   type: fanout
   autoDelete: false
