@@ -1,0 +1,12 @@
+---
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: rabbit2
+spec:
+  replicas: 1
+  service:
+    type: LoadBalancer
+  rabbitmq:
+    additionalPlugins:
+    - rabbitmq_federation
